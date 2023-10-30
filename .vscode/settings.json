@@ -1,0 +1,13 @@
+{
+    // "workbench.colorTheme": "One Dark Pro",
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 2,
+    "liveServer.settings.fullReload": true,
+    "terminal.integrated.fontSize": 14,
+    "editor.wordWrap": "on",
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "files.eol": "\n",
+    "emmet.showSuggestionsAsSnippets": true,
+    "editor.snippetSuggestions": "bottom"
+}

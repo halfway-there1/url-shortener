@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>URL Shortener</title>
+</head>
+
+<body>
+  <h1>Short.ly</h1>
+  <form action="" method="POST">
+    <input type="url" name="original_url" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <% if (url_list) { %>
+    <table>
+      <tr>
+        <th>Original URL</th>
+        <th>Shortened URL</th>
+        <th>Clicks</th>
+      </tr>
+      <% for( let index=0; index < url_list.length; index++ ) { %>
+        <tr>
+          <td><a href=<%=url_list[index].original_url %>><%=url_list[index].original_url %></a></td>
+          <td>
+            <a href=<%=`./${url_list[index]["url-code"]}` %>>
+              <%= url_list[index]["url-code"] %>
+            </a>
+          </td>
+          <td>
+            <%= url_list[index].clicks %>
+          </td>
+        </tr>
+        <% } %>
+    </table>
+    <% } %>
+</body>
+
+</html>
