@@ -27,6 +27,8 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.urlencoded({ extended: false }));
+// add static files folder
+app.use(express.static(path.join(__dirname, 'public')));
 
 // setting routes
 app.use('/', indexRouter);

@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "devStart": "nodemon app.js"
+    "devStart": "nodemon app.js",
+    "syncStart": "browser-sync start --proxy \"localhost:4000\" --files \"public/**/*, views/**/*\""
   },
   "keywords": [],
   "author": "",
